@@ -56,3 +56,13 @@ Question Number,Question,Concepts
 
 
 ## Prompt for LLM
+```
+Identify the key concepts being tested in the following question and give a list of 3 high-level concepts only in the following comma separated format: question_number, question, concepts.: {question}
+Consider the following pairs: Historical place Well - known for 1. Burzahom : Rock-cut shrines 2. Chandra - ketugarh : Terracotta art 3. Ganeshwar : Copper artefacts Which of the pairs given above is/are correctly matched?
+```
+Output:
+```
+1, Consider the following pairs: Historical place Well - known for 1. Burzahom : Rock-cut shrines 2. Chandra - ketugarh : Terracotta art 3. Ganeshwar : Copper artefacts Which of the pairs given above is/are correctly matched?, Burzahom, Chandraketugarh, Ganeshwar
+```
+
+Author: Yashvi Trivedi
