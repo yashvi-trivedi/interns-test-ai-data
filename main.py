@@ -161,7 +161,7 @@ def match_concepts(question, concept_dict):
         # Uses LLM-based mapping
         
         from llm_api import call_anthropic  # Deferred import
-        prompt=f"Identify the key concepts being tested in the following question and give a list of high-level concepts only.: {question}"
+        prompt=f"Identify the key concepts being tested in the following question and give a list of 3 high-level concepts only in the following comma separated format: question_number, question, concepts.: {question}"
         response = call_anthropic(prompt)
         return [concept.strip() for concept in response.split(",")]
 
